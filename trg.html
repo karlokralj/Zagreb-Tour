@@ -5,17 +5,33 @@
 	<link rel="stylesheet" type="text/css" href="./style/style.css">
 	<title>Zagreb Tour | Bana Josipa Jelačića</title>
 </head>
+
 <body>
 	<header>
-		<div class = "heading">
-			<h1><a href="./index.html">Zagreb Tour</a></h1>
+		<div class = "heading1">
+			<a href="#" onclick="openMenu()">
+				<svg width="30" height="30">
+					<path d="M0, 5 30, 5" stroke="#fff" stroke-width="5"/>
+					<path d="M0, 14 30, 14" stroke="#fff" stroke-width="5"/>
+					<path d="M0, 23 30, 23" stroke="#fff" stroke-width="5"/>
+				</svg>
+			</a>
+			<h1 onclick="index()">Zagreb Tour</h1>
 		</div>
-		<div class ="head-bar">
+		<div class = "head-bar">
 			<p>Povrh starog Griča brda, kao junak lijep i mlad, smjele glave, čela tvrda,slavni stoji Zagreb grad!</p>
 		</div>
 	</header>
+		
+	<div id="side-menu" class="side-bar">
+		<a href="#" class="btn-close" onclick="closeMenu()">&times;</a>
+		<a href="#">History</a>
+		<a href="#">Poetry</a>
+		<a href="#">Museums</a>
+	</div>
 
 	<section class = "container">
+		<h2>Josip Jelačić Square</h2>
 		<h3>Location</h3>
 		<div class="text-box">
 			<p>Ban Jelačić Square (Croatian: Trg bana Josipa Jelačića or Trg bana Jelačića) is the central square of the city of Zagreb, Croatia, named after ban Josip Jelačić. The official name is Trg bana Jelačića.
@@ -69,5 +85,6 @@
 	<footer class="footer1">
 			<p>Made By Karlo Kralj &copy; 2019</p>
 	</footer>
+	<script src="./js/main.js"></script>
 </body>
 </html>
